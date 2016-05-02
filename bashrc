@@ -113,7 +113,7 @@ export NVM_DIR="/home/wayne/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 function _update_ps1() {
-	PS1="$(~/powerline-shell.py --cwd-max-depth 3 $? 2> /dev/null)"
+	PS1="$(~/powerline-shell.py --cwd-max-depth 6 $? 2> /dev/null)\n\$ "
 }
 
 if [ "$TERM" != "linux" ]; then

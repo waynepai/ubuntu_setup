@@ -44,6 +44,8 @@ NeoBundle 'ntpeters/vim-better-whitespace'
 NeoBundle 'Shutnik/jshint2.vim'
 NeoBundle 'mileszs/ack.vim'
 NeoBundle 'Valloric/YouCompleteMe' " cd ~/.vim/bundle/YouCompleteMe; ./install.py --clang-completer
+NeoBundle 'vim-scripts/indentpython.vim'
+NeoBundle 'hynek/vim-python-pep8-indent'
 call neobundle#end()
 filetype plugin indent on
 
@@ -167,6 +169,7 @@ autocmd CursorMoved * exe printf('match IncSearch /\V\<%s\>/', escape(expand('<c
 " YCM config
 " ---------------------------------------
 let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
+let g:ycm_autoclose_preview_window_after_insertion = 1
 let g:ycm_confirm_extra_conf = 0
 let g:ycm_show_diagnostics_ui = 0
 let g:ycm_filetype_blacklist = {
