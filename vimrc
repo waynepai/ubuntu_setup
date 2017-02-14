@@ -158,6 +158,7 @@ set foldmethod=syntax
 set foldlevel=99
 set foldclose=all
 set pastetoggle=<F12>
+set completeopt-=preview
 colorscheme molokai
 
 " ----------------------------------------
@@ -171,6 +172,7 @@ autocmd CursorMoved * exe printf('match IncSearch /\V\<%s\>/', escape(expand('<c
 " ---------------------------------------
 let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
 let g:ycm_autoclose_preview_window_after_insertion = 1
+let g:ycm_autoclose_preview_window_after_completion = 1
 let g:ycm_confirm_extra_conf = 0
 let g:ycm_show_diagnostics_ui = 0
 let g:ycm_filetype_blacklist = {
