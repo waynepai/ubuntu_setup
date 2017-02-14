@@ -46,6 +46,7 @@ NeoBundle 'mileszs/ack.vim'
 NeoBundle 'Valloric/YouCompleteMe' " cd ~/.vim/bundle/YouCompleteMe; ./install.py --clang-completer
 NeoBundle 'vim-scripts/indentpython.vim'
 NeoBundle 'hynek/vim-python-pep8-indent'
+NeoBundle 'fatih/vim-go'
 call neobundle#end()
 filetype plugin indent on
 
@@ -194,4 +195,14 @@ set tags+=./tags;/
 set laststatus=2
 let g:Powerline_symbols='fancy'
 let Powerline_symbols='compatible'
+
+" ---------------------------------------
+" Golang
+" ---------------------------------------
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_fields = 1
+let g:go_highlight_types = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_build_constraints = 1
 
