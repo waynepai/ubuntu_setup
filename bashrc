@@ -124,3 +124,4 @@ alias tmux="sudo tmux -2"
 
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+export HISTCONTROL=ignoredups
